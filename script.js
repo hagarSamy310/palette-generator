@@ -1,7 +1,7 @@
 const paletteBtn = document.querySelector(".palette-btn");
 const colorsCols = document.querySelectorAll(".color");
 const errorMsg = document.querySelector(".error-msg");
-const url = "http://colormind.io/api/";
+const url = "/api/";
 
 // Initialize the page
 generatePalette();
