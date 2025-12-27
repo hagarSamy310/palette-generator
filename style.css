@@ -64,6 +64,8 @@ header p {
 .color-picker {
 	position: absolute;
 	top: 0;
+	left: 0%;
+	align-self: flex-start;
 	opacity: 0;
 }
 .color-details {

@@ -1,7 +1,8 @@
 const paletteBtn = document.querySelector(".palette-btn");
 const colorsCols = document.querySelectorAll(".color");
 const errorMsg = document.querySelector(".error-msg");
-const url = "/api/";
+const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const url = isLocal? "http://colormind.io/api/" : "/api/";
 
 // Initialize the page
 generatePalette();

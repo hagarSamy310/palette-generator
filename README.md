@@ -2,6 +2,9 @@
 
 A dynamic, interactive color palette generator built with Vanilla JavaScript and the Colormind API. This tool allows users to generate cohesive color schemes, lock favorite colors, and manually fine-tune selections with a built-in color picker.
 
+## 📸 Screenshot
+![screenshot](/assets/screenshot.png)
+
 ## ✨ Features
 - **AI-Driven Palettes:** Fetches professional color schemes using the Colormind API.
 - **Smart Locking System:** Lock specific columns to preserve them while generating new surrounding colors.
@@ -20,3 +23,5 @@ A dynamic, interactive color palette generator built with Vanilla JavaScript and
 2. Click the **Lock Icon** to keep a specific color.
 3. Click the **Hex Text** to open a color picker and choose a custom value.
 4. Click the **Duplicate Icon** to copy the Hex code to your clipboard.
+
+## [Live Demo]: (https://palettegenerator31.netlify.app/)
