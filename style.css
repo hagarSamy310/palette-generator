@@ -1,0 +1,185 @@
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	text-align: center;
+	font-family: monospace;
+	overflow: hidden;
+	line-height: 1.6;
+	font-size: clamp(0.5rem, 0.5rem + 1.5vw, 1.2rem);
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+	transform: scale(1.2);
+}
+
+header {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.palette-btn {
+	font-size: 1.5rem;
+	align-self: flex-start;
+}
+
+header p {
+	font-weight: bold;
+	color: gray;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	height: 80dvh;
+	margin-top: auto;
+	position: relative;
+}
+
+.color {
+	height: 100%;
+	background-color: transparent;
+	border-right: 0.5px solid gainsboro;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.color-picker {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+.color-details {
+	display: none;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.color .color-details {
+  display: none;
+}
+.color:hover .color-details {
+  display: flex;
+}
+
+.copy-btn img,
+.lock-btn img {
+	width: 24px;
+}
+
+.copied {
+	visibility: hidden;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.is-dark .copied {
+	color: white;
+}
+
+.is-light .copied {
+	color: black;
+}
+
+.is-light img {
+	filter: invert(0);
+}
+
+.is-dark img {
+	filter: invert(1) brightness(2);
+}
+
+.color-details span {
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0 12px;
+	border-radius: 12px;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+}
+.is-dark .color-details span:hover {
+	background-color: rgba(255, 255, 255, 0.103);
+}
+
+.is-light .color-details span:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.error {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 20%;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.error > p {
+	display: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 0.5rem 0.8rem;
+	border-radius: 5px;
+}
+
+footer {
+	padding-top: 1rem;
+	font-size: 0.9rem;
+	color: gray;
+	font-weight: 600;
+}
+
+footer a {
+	text-decoration: none;
+	color: gray;
+	border-bottom: 1px solid gray;
+}
+
+footer a:hover {
+	color: rgb(176, 170, 170);
+}
+@media (max-width: 576px) {
+	.container {
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: 1fr;
+	}
+	.color {
+		border-bottom: 0.5px solid gainsboro;
+		border-right: none;
+	}
+
+	.palette-btn {
+		align-self: flex-start;
+	}
+
+	.color-details {
+		flex-direction: row;
+	}
+	.copy-btn img,
+	.lock-btn img {
+		width: 18px;
+	}
+
+	.copied {
+		order: 1;
+		font-size: 0.8rem;
+	}
+}
