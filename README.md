@@ -3,7 +3,7 @@
 A dynamic, interactive color palette generator built with Vanilla JavaScript and the Colormind API. This tool allows users to generate cohesive color schemes, lock favorite colors, and manually fine-tune selections with a built-in color picker.
 
 ## 📸 Screenshot
-![screenshot](/assets/screenshot.png)
+![screenshot](/assets/palette%20generator%20screenshot.jpeg)
 
 ## ✨ Features
 - **AI-Driven Palettes:** Fetches professional color schemes using the Colormind API.
