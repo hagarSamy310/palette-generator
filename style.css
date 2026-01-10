@@ -243,16 +243,23 @@ header p {
 	.pcr-app {
 		max-width: 50vw !important;
 		width: 50vw !important;
-		height: 250px !important;
+		height: 200px !important;
+	}
+
+	.pcr-app .pcr-interaction {
+		padding: 6px 8px !important;
+		gap: 6px !important; 
 	}
 
 	.pcr-app .pcr-interaction .pcr-result {
-		font-size: 13px !important;
-		padding: 7px 8px !important;
+		font-size: 12px !important;
+		padding: 6px 8px !important;
+		margin-top: 0 !important;
 	}
 
 	.pcr-app .pcr-interaction .pcr-type button {
-		padding: 3px 10px !important;
-		font-size: 10px !important;
+		padding: 3px 8px !important;
+		font-size: 9px !important;
 	}
+	
 }
