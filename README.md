@@ -22,7 +22,7 @@ An intelligent, interactive color palette generator that helps designers and dev
 
 ## 🚀 Live Demo
 
-[**View Live Demo**]() | [**Try the Visualizer**]()
+[**View Live Demo**](https://palettegenerator31.netlify.app/)
 
 ## 🛠️ Built With
 
