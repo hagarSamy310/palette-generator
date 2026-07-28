@@ -1,7 +1,7 @@
 const paletteBtn = document.querySelector(".palette-btn");
 const colorsCols = document.querySelectorAll(".color");
 const errorMsg = document.querySelector(".error-msg");
-const url = "https://api.huemint.com/color";
+const url = '/api/colors';
 let demoWindow = null;
 
 // Initialize the page
